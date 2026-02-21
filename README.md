@@ -1,0 +1,117 @@
+# Daily Apps
+
+A modern, responsive website showcasing daily productivity applications with integrated app experiences.
+
+## 🚀 Features
+
+- **Modern Design**: Professional UI with animated gradient backgrounds and smooth transitions
+- **Dark/Light Theme**: Toggle between themes with persistent preferences
+- **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
+- **Integrated Apps**: 
+  - ToDo Master - Complete task management application
+  - SecureVault - Password management (coming soon)
+- **Professional Privacy Policy**: Comprehensive privacy documentation
+- **React Router**: Seamless navigation between apps
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18, JavaScript/TypeScript
+- **Styling**: Tailwind CSS, Custom CSS
+- **Build Tool**: Vite
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **Deployment**: Ready for Netlify/Vercel
+
+## 📱 Applications
+
+### ToDo Master
+A comprehensive task management application featuring:
+- Daily & Weekly routines with progress tracking
+- Scheduled tasks with smart reminders
+- Voice notes for quick task capture
+- Dark/Light theme support
+- Professional privacy policy
+
+### SecureVault (Coming Soon)
+Password management application with local encryption.
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yassin-amr55/Daily-Apps.git
+   cd Daily-Apps
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 📁 Project Structure
+
+```
+Daily-Apps/
+├── src/
+│   ├── components/          # Main website components
+│   ├── todo-master/         # ToDo Master app integration
+│   │   ├── components/      # ToDo Master components
+│   │   └── assets/          # ToDo Master assets
+│   ├── data/               # App data and configurations
+│   └── assets/             # Shared assets
+├── public/                 # Static assets
+├── apps/                   # Original app folders (reference)
+└── advertising/            # Marketing materials
+```
+
+## 🎨 Design Features
+
+- **Animated Backgrounds**: Floating gradient blobs in hero sections
+- **Professional Headers**: Fixed navigation with scroll effects
+- **Gradient Text**: Eye-catching gradient text effects
+- **Card Layouts**: Modern card-based app showcases
+- **Smooth Transitions**: CSS transitions for better UX
+
+## 🔧 Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+### Adding New Apps
+
+1. Create app folder in `src/`
+2. Add app data to `src/data/apps.js`
+3. Add route in `src/App.jsx`
+4. Add app icon to `public/`
+
+## 📄 License
+
+© 2025 Daily Apps. All rights reserved.
+
+## 🤝 Contributing
+
+This is a personal project showcasing daily productivity applications. Feel free to explore the code and use it as inspiration for your own projects.
+
+## 📞 Contact
+
+- **Email**: todomaster.todo@gmail.com
+- **Portfolio**: yassinamr.com
+- **Social**: @daily_app_s
+
+---
+
+Built with ❤️ for productivity enthusiasts
