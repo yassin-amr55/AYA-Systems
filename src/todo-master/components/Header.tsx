@@ -1,6 +1,5 @@
 import { Moon, Sun } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
   theme: 'light' | 'dark';
@@ -9,7 +8,6 @@ interface HeaderProps {
 
 export default function Header({ theme, toggleTheme }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,17 +18,6 @@ export default function Header({ theme, toggleTheme }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handlePrivacyClick = () => {
-    navigate('/ToDo-Master/pp');
-  };
-
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
@@ -40,23 +27,11 @@ export default function Header({ theme, toggleTheme }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <img src="/todo-master-icon.png" alt="To-Do Master Logo" className="w-10 h-10 rounded-full shadow-lg" />
-            <span className="text-xl font-bold text-gray-900 dark:text-white">ToDo Master</span>
+            <img src="/logo2.png" alt="To-Do Master Logo" className="w-10 h-10 rounded-full shadow-lg" />
+            <span className="text-xl font-bold text-gray-900 dark:text-white">AYA Systems</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection('features')} className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
-              Features
-            </button>
-            <button onClick={() => scrollToSection('screenshots')} className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
-              Screenshots
-            </button>
-            <button onClick={() => scrollToSection('download')} className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
-              Download
-            </button>
-            <button onClick={handlePrivacyClick} className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
-              Privacy
-            </button>
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all"

@@ -128,8 +128,8 @@ function AppWithLoading({ theme, toggleTheme }) {
     <div className={`app ${theme}`}>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<HomePage theme={theme} toggleTheme={toggleTheme} />} />
-        <Route path="/ToDo-Master/*" element={<TodoMasterApp theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/" element={<TodoMasterApp theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/daily-apps" element={<HomePage theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/SecureVault/*" element={<SecureVaultApp theme={theme} toggleTheme={toggleTheme} />} />
       </Routes>
     </div>

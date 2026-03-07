@@ -35,7 +35,7 @@ export default function PhoneMockup() {
       }}
     >
       <img 
-        src="/assets/screenshots/screenshot1 tilted.png" 
+        src="/2.png" 
         alt="TodoMaster App Screenshot" 
         className="w-full max-w-md mx-auto drop-shadow-2xl"
       />

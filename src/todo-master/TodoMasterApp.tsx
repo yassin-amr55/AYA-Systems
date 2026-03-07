@@ -29,10 +29,6 @@ function HomePage({ theme, toggleTheme }: TodoMasterAppProps) {
       <Header theme={theme} toggleTheme={toggleTheme} />
       <div style={{ paddingTop: '64px' }}>
         <Hero />
-        <Features />
-        <Screenshots />
-        <HowItWorks />
-        <Footer />
       </div>
     </div>
   );
