@@ -11,7 +11,7 @@ export default function LoadingScreen({ progress = 0 }: LoadingScreenProps) {
         <div className="mb-8 animate-bounce">
           <CheckCircle2 className="w-20 h-20 text-blue-600 dark:text-white mx-auto" strokeWidth={2} />
         </div>
-        <h1 className="text-4xl font-bold text-blue-600 dark:text-white mb-4">TodoMaster</h1>
+        <h1 className="text-4xl font-bold text-blue-600 dark:text-white mb-4">AYA Systems</h1>
         <div className="w-64 h-2 bg-blue-200 dark:bg-white/20 rounded-full overflow-hidden">
           <div 
             className="h-full bg-blue-600 dark:bg-white rounded-full transition-all duration-300 ease-out"
