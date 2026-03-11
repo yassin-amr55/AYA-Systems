@@ -4,302 +4,184 @@ import { ArrowLeft } from 'lucide-react';
 
 export default function PrivacyPolicy() {
   useEffect(() => {
-    // Apply dark mode if needed
-    const isDark = document.body.classList.contains('dark');
-    if (isDark) {
-      document.body.classList.add('dark');
-    }
+    window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
-      <div className="container mx-auto px-6 py-12 max-w-5xl">
-        {/* Header Section */}
-        <header className="text-center mb-16">
-          <div className="mb-8">
-            <Link
-              to="/ToDo-Master"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 text-white rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 font-medium"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to ToDo Master
-            </Link>
-          </div>
-          <div className="space-y-4">
-            <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 bg-clip-text text-transparent">
-              ToDo Master
-            </h1>
-            <h2 className="text-3xl font-semibold text-gray-700 dark:text-gray-300">Privacy Policy</h2>
-            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
-              Effective Date: January 1, 2025 | Last Updated: January 1, 2025
-            </p>
-          </div>
-        </header>
-
-        {/* Main Content */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 space-y-12">
-          
-          {/* Section 1 */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 bg-clip-text text-transparent border-b border-gray-200 dark:border-gray-700 pb-3">
-              1. Introduction
-            </h2>
-            <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-              <p>
-                Welcome to ToDo Master ("we," "us," or "our"). We are committed to protecting your privacy and ensuring transparency in how we handle your information. This Privacy Policy explains our practices regarding the collection, use, disclosure, and safeguarding of your information when you use our mobile and web application (the "App").
-              </p>
-              <p>
-                ToDo Master is designed to help you build consistent routines and manage your tasks efficiently. We prioritize your privacy by design and do not collect personal data unless absolutely necessary for the app's core functionality.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 2 */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 bg-clip-text text-transparent border-b border-gray-200 dark:border-gray-700 pb-3">
-              2. Information We Collect
-            </h2>
-            
-            <div className="space-y-6">
-              <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">2.1 Information You Provide</h3>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  We do not require you to create an account or provide personal information to use ToDo Master. All your tasks, routines, voice notes, and settings are stored locally on your device and remain under your complete control.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">2.2 Automatically Collected Information</h3>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  To improve your experience and fix issues, we may collect anonymous usage statistics. This information is completely anonymized and includes:
-                </p>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-blue-500 dark:bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>App usage patterns and feature interactions</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-blue-500 dark:bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Device information (operating system, app version)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-blue-500 dark:bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Crash reports to help us identify and fix technical issues</span>
-                  </li>
-                </ul>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4 font-medium">
-                  This information cannot be used to identify you personally and is used solely for app improvement.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 3 */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 bg-clip-text text-transparent border-b border-gray-200 dark:border-gray-700 pb-3">
-              3. How We Use Your Information
-            </h2>
-            <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-6">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                We use the collected information exclusively to:
-              </p>
-              <ul className="space-y-3 text-gray-700 dark:text-gray-300">
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 dark:bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Provide and maintain the App's core functionality</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 dark:bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Improve the App's performance and user experience</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 dark:bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Identify and resolve bugs and technical issues</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 dark:bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Analyze usage trends to develop new features</span>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          {/* Section 4 */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 bg-clip-text text-transparent border-b border-gray-200 dark:border-gray-700 pb-3">
-              4. Data Sharing and Disclosure
-            </h2>
-            <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-6">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 font-medium">
-                <strong>We do not sell, trade, or otherwise transfer your personal information to third parties.</strong> Your data remains on your device and is not shared with us or any other entities except in these limited circumstances:
-              </p>
-              <ul className="space-y-3 text-gray-700 dark:text-gray-300">
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>You explicitly choose to share or export your data</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Required by law or to protect our legal rights</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Anonymous analytics data processed by trusted third-party services</span>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          {/* Section 5 */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 bg-clip-text text-transparent border-b border-gray-200 dark:border-gray-700 pb-3">
-              5. Data Security
-            </h2>
-            <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-              <p>
-                We implement industry-standard security measures to protect your information. Since your personal data is stored locally on your device, its security primarily depends on your device's security practices.
-              </p>
-              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6">
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Security Recommendations:</h4>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Use strong passwords and biometric authentication</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Keep your device and the app updated</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Regularly backup your data</span>
-                  </li>
-                </ul>
-              </div>
-              <p>
-                For any data transmitted to our servers (such as crash reports), we use industry-standard encryption and secure protocols to protect your information in transit and at rest.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 6 */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 bg-clip-text text-transparent border-b border-gray-200 dark:border-gray-700 pb-3">
-              6. Your Rights and Choices
-            </h2>
-            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 font-medium">
-                You have complete control over your data with the following rights:
-              </p>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <strong>Access:</strong> View all your data within the App
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <strong>Delete:</strong> Remove your data at any time through settings
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <strong>Export:</strong> Backup or transfer your data
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <strong>Opt-out:</strong> Disable analytics in App settings
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 7 */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 bg-clip-text text-transparent border-b border-gray-200 dark:border-gray-700 pb-3">
-              7. Children's Privacy
-            </h2>
-            <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-xl p-6">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                ToDo Master is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that we have collected such information, we will take immediate steps to delete it and terminate the account if applicable.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 8 */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 bg-clip-text text-transparent border-b border-gray-200 dark:border-gray-700 pb-3">
-              8. Changes to This Privacy Policy
-            </h2>
-            <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-              <p>
-                We may update this Privacy Policy periodically to reflect changes in our practices or for legal, operational, or regulatory reasons. When we make changes, we will:
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 dark:bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Update the "Last Updated" date at the top of this policy</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 dark:bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Notify you through the App or other appropriate means</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 dark:bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Provide a reasonable notice period for significant changes</span>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          {/* Section 9 */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-orange-500 dark:to-red-500 bg-clip-text text-transparent border-b border-gray-200 dark:border-gray-700 pb-3">
-              9. Contact Us
-            </h2>
-            <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-              <p>
-                If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please don't hesitate to contact us:
-              </p>
-              <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <span className="font-semibold text-gray-900 dark:text-white">Email:</span>
-                    <a href="mailto:todomaster.todo@gmail.com" className="text-blue-600 dark:text-orange-500 hover:underline font-medium">
-                      todomaster.todo@gmail.com
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="font-semibold text-gray-900 dark:text-white">Response Time:</span>
-                    <span>We typically respond within 48 hours</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
+    <div className="min-h-screen bg-gray-50 dark:bg-slate-900">
+      <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="mb-6">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 px-4 py-2 text-blue-600 dark:text-orange-500 hover:text-blue-700 dark:hover:text-orange-600 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Home
+          </Link>
         </div>
 
-        {/* Footer */}
-        <footer className="text-center mt-16 space-y-4">
-          <div className="h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent"></div>
-          <p className="text-gray-500 dark:text-gray-400 text-lg">
-            &copy; 2025 ToDo Master. All rights reserved.
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 md:p-12">
+          <h1 className="text-4xl font-bold text-blue-600 dark:text-orange-500 border-b-4 border-blue-600 dark:border-orange-500 pb-4 mb-6">
+            Privacy Policy for AYA Systems
+          </h1>
+          
+          <p className="text-gray-600 dark:text-gray-400 italic mb-8">
+            Last Updated: March 11, 2026
           </p>
-          <p className="text-gray-400 dark:text-gray-500 text-sm">
-            Built with privacy in mind • Designed for productivity
+
+          <section className="space-y-6 mb-8">
+            <h2 className="text-3xl font-bold text-blue-800 dark:text-orange-400 mt-8 mb-4">1. Introduction</h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              Welcome to AYA Systems ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and services.
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              AYA Systems is a comprehensive school management platform designed to facilitate communication and administration between supervisors, teachers, parents, and students. By using our application, you agree to the collection and use of information in accordance with this policy.
+            </p>
+          </section>
+
+          <section className="space-y-6 mb-8">
+            <h2 className="text-3xl font-bold text-blue-800 dark:text-orange-400 mt-8 mb-4">2. Information We Collect</h2>
+            
+            <h3 className="text-2xl font-semibold text-blue-700 dark:text-orange-300 mt-6 mb-3">2.1 Personal Information</h3>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">We collect the following types of personal information:</p>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li><strong>Account Information:</strong> Email addresses for supervisors, usernames and passwords for teachers, parents, and students</li>
+              <li><strong>Profile Information:</strong> Names, grades (for students), school affiliations, and user roles</li>
+              <li><strong>Contact Information:</strong> Email addresses and any contact details provided during registration</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-blue-700 dark:text-orange-300 mt-6 mb-3">2.2 Usage Information</h3>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li><strong>Messages:</strong> Content of messages sent between users within the application</li>
+              <li><strong>Reports:</strong> Student reports created by teachers, including academic performance and behavioral information</li>
+              <li><strong>Activity Logs:</strong> Login times, feature usage, and interaction patterns within the app</li>
+              <li><strong>Device Information:</strong> Device type, operating system version, unique device identifiers</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-blue-700 dark:text-orange-300 mt-6 mb-3">2.3 Camera and Media Access</h3>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li><strong>Camera Feeds:</strong> Access to school security cameras connected through the AYA Device (for authorized supervisors only)</li>
+              <li><strong>Camera Reports:</strong> Incident reports and recordings generated from camera monitoring</li>
+            </ul>
+          </section>
+
+          <section className="space-y-6 mb-8">
+            <h2 className="text-3xl font-bold text-blue-800 dark:text-orange-400 mt-8 mb-4">3. How We Use Your Information</h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">We use the collected information for the following purposes:</p>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li><strong>Service Delivery:</strong> To provide and maintain our school management services</li>
+              <li><strong>Communication:</strong> To enable messaging between supervisors, teachers, parents, and students</li>
+              <li><strong>Account Management:</strong> To create, manage, and authenticate user accounts</li>
+              <li><strong>Report Generation:</strong> To create and distribute student reports to authorized parties</li>
+              <li><strong>Security Monitoring:</strong> To provide camera monitoring and incident reporting capabilities</li>
+              <li><strong>Service Improvement:</strong> To analyze usage patterns and improve our application features</li>
+              <li><strong>Support:</strong> To respond to user inquiries and provide customer support</li>
+              <li><strong>Compliance:</strong> To comply with legal obligations and protect our rights</li>
+            </ul>
+          </section>
+
+          <section className="space-y-6 mb-8">
+            <h2 className="text-3xl font-bold text-blue-800 dark:text-orange-400 mt-8 mb-4">4. Data Sharing and Disclosure</h2>
+            
+            <h3 className="text-2xl font-semibold text-blue-700 dark:text-orange-300 mt-6 mb-3">4.1 Within the School Community</h3>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">Information is shared within your school community as follows:</p>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li><strong>Supervisors:</strong> Can access information about students, parents, and teachers within their school</li>
+              <li><strong>Teachers:</strong> Can access information about their assigned students and communicate with parents</li>
+              <li><strong>Parents:</strong> Can access information about their own children and communicate with teachers</li>
+              <li><strong>Students:</strong> Can access their own reports and messages</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold text-blue-700 dark:text-orange-300 mt-6 mb-3">4.2 Third-Party Service Providers</h3>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">We may share information with trusted third-party service providers who assist us in:</p>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li>Cloud hosting and data storage (Supabase)</li>
+              <li>Application infrastructure and maintenance</li>
+              <li>Analytics and performance monitoring</li>
+            </ul>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-3">These providers are contractually obligated to protect your information and use it only for the purposes we specify.</p>
+
+            <h3 className="text-2xl font-semibold text-blue-700 dark:text-orange-300 mt-6 mb-3">4.3 Legal Requirements</h3>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., court orders, subpoenas).</p>
+          </section>
+
+          <section className="space-y-6 mb-8">
+            <h2 className="text-3xl font-bold text-blue-800 dark:text-orange-400 mt-8 mb-4">5. Data Security</h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">We implement appropriate technical and organizational security measures to protect your personal information, including:</p>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li><strong>Encryption:</strong> Data transmission is encrypted using industry-standard protocols</li>
+              <li><strong>Access Controls:</strong> Role-based access controls ensure users can only access authorized information</li>
+              <li><strong>Authentication:</strong> Secure password requirements and authentication mechanisms</li>
+              <li><strong>Regular Updates:</strong> Regular security updates and vulnerability assessments</li>
+              <li><strong>Data Backup:</strong> Regular backups to prevent data loss</li>
+            </ul>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-3">However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
+          </section>
+
+          <section className="space-y-6 mb-8">
+            <h2 className="text-3xl font-bold text-blue-800 dark:text-orange-400 mt-8 mb-4">6. Data Retention</h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">We retain your personal information for as long as necessary to:</p>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li>Provide our services to you</li>
+              <li>Comply with legal obligations</li>
+              <li>Resolve disputes and enforce our agreements</li>
+            </ul>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-3">When you delete your account or when a school relationship ends, we will delete or anonymize your personal information within a reasonable timeframe, unless we are required to retain it for legal purposes.</p>
+          </section>
+
+          <section className="space-y-6 mb-8">
+            <h2 className="text-3xl font-bold text-blue-800 dark:text-orange-400 mt-8 mb-4">7. Children's Privacy</h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">AYA Systems is designed for use in educational settings and may be used by minors under the age of 13. We comply with the Children's Online Privacy Protection Act (COPPA) and similar regulations:</p>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li>Student accounts are created by authorized school supervisors, not by children themselves</li>
+              <li>We collect only the minimum information necessary to provide our services</li>
+              <li>Parents have the right to review, modify, or delete their child's information</li>
+              <li>We do not use children's information for marketing purposes</li>
+              <li>We do not share children's information with third parties except as necessary to provide our services</li>
+            </ul>
+          </section>
+
+          <section className="space-y-6 mb-8">
+            <h2 className="text-3xl font-bold text-blue-800 dark:text-orange-400 mt-8 mb-4">8. Your Rights and Choices</h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">Depending on your location, you may have the following rights:</p>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li><strong>Access:</strong> Request access to your personal information</li>
+              <li><strong>Correction:</strong> Request correction of inaccurate information</li>
+              <li><strong>Deletion:</strong> Request deletion of your personal information</li>
+              <li><strong>Data Portability:</strong> Request a copy of your data in a portable format</li>
+              <li><strong>Objection:</strong> Object to certain processing of your information</li>
+              <li><strong>Withdrawal of Consent:</strong> Withdraw consent where processing is based on consent</li>
+            </ul>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-3">To exercise these rights, please contact your school administrator or reach out to us directly using the contact information below.</p>
+          </section>
+
+          <section className="space-y-6 mb-8">
+            <h2 className="text-3xl font-bold text-blue-800 dark:text-orange-400 mt-8 mb-4">9. AYA Device Integration</h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">Our application integrates with the AYA Device, a hardware system connected to school infrastructure including security cameras and attendance systems. When using camera monitoring features:</p>
+            <ul className="list-disc ml-8 space-y-2 text-gray-700 dark:text-gray-300">
+              <li>Only authorized supervisors can access camera feeds</li>
+              <li>Camera access is logged and monitored</li>
+              <li>Recordings are stored securely and retained according to school policies</li>
+              <li>Camera data is used solely for school security and safety purposes</li>
+            </ul>
+          </section>
+
+          <div className="bg-blue-50 dark:bg-slate-700 rounded-xl p-6 mt-8">
+            <h2 className="text-3xl font-bold text-blue-800 dark:text-orange-400 mb-4">Contact Us</h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+            <p className="text-gray-700 dark:text-gray-300">
+              <strong>AYA Systems - Daily Apps</strong><br />
+              Email: support@ayasystems.com
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 mt-4">For school-specific inquiries, please contact your school administrator first.</p>
+          </div>
+
+          <hr className="my-8 border-gray-300 dark:border-slate-600" />
+          
+          <p className="text-center text-gray-600 dark:text-gray-400 text-sm">
+            © 2026 AYA Systems - Daily Apps. All rights reserved.
           </p>
-        </footer>
+        </div>
       </div>
     </div>
   );

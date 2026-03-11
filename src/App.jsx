@@ -7,6 +7,7 @@ import About from './components/About'
 import Footer from './components/Footer'
 import TodoMasterApp from './todo-master/TodoMasterApp' // Import TypeScript component
 import SecureVaultApp from './secure-vault/SecureVaultApp' // Import SecureVault component
+import PrivacyPolicy from './todo-master/components/PrivacyPolicy' // Import Privacy Policy
 import './App.css'
 
 // Scroll to top component
@@ -38,6 +39,7 @@ function AppWithLoading({ theme, toggleTheme }) {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<TodoMasterApp theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/daily-apps" element={<HomePage theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/SecureVault/*" element={<SecureVaultApp theme={theme} toggleTheme={toggleTheme} />} />
       </Routes>
