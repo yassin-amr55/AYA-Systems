@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Contact from './components/Contact';
 import Features from './components/Features';
 import Screenshots from './components/Screenshots';
 import HowItWorks from './components/HowItWorks';
@@ -29,6 +30,7 @@ function HomePage({ theme, toggleTheme }: TodoMasterAppProps) {
       <Header theme={theme} toggleTheme={toggleTheme} />
       <div style={{ paddingTop: '64px' }}>
         <Hero />
+        <Contact />
       </div>
     </div>
   );

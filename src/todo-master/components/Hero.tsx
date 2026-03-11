@@ -53,6 +53,10 @@ export default function Hero() {
                 Download APK
               </a>
             </div>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 flex items-center justify-center sm:justify-start gap-2">
+              <span className="inline-block w-2 h-2 bg-blue-600 dark:bg-orange-500 rounded-full animate-pulse"></span>
+              Soon available on Play Store
+            </p>
           </div>
 
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
